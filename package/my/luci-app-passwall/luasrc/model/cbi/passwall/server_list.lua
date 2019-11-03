@@ -53,8 +53,7 @@ o.width = "15%"
 o = s:option(DummyValue, "server_port", translate("Server Port"))
 o.width = "10%"
 
----- Encrypt Method
---[[o = s:option(DummyValue, "encrypt_method", translate("Encrypt Method"))
+o = s:option(DummyValue, "encrypt_method", translate("Encrypt Method"))
 o.width="15%"
 o.cfgvalue=function(t, n)
 local str="无"
@@ -67,10 +66,20 @@ elseif type == "V2ray" then
 	return m.uci:get(appname, n, "v2ray_security")
 end
 return str
-end--]]
+end
+o = s:option(DummyValue, "protocol", translate("Protocol"))
+o.width = "10%"
+o = s:option(DummyValue, "obfs", translate("Obfs"))
+
+o.width = "10%"
+
+o = s:option(Flag,"use_kcp",translate("Kcptun Switch"))
+o.width="10%"
+
+
 
 ---- Ping
-o = s:option(DummyValue, "server", translate("Ping"))
+o = s:option(DummyValue, "server", translate("Ping Latency"))
 if uci:get(appname, "@global_other[0]", "auto_ping") == "0" then
     o.template = "passwall/server_list/ping"
 else
