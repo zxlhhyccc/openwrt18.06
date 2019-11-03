@@ -1,4 +1,4 @@
-# openwrt18.06 (内置主流插件)
+# openwrt18.06 
 
 1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  14 LTS x64
 
@@ -12,3 +12,5 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
    make menuconfig 
 
 5. 最后选好你要的路由，输入 make -j1 V=s （-j1 后面是线程数。第一次编译推荐用单线程，国内请尽量全局科学上网）即可开始编译你要的固件了。
+
+#本仓库来自NT只做跟新维护.内置主流插件
