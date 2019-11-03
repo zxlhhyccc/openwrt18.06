@@ -1,4 +1,4 @@
-# openwrt18.06
+# openwrt18.06 (本仓库基于NT大佬源码只做更新维护.内置主流插件)
 
 1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  14 LTS x64
 
