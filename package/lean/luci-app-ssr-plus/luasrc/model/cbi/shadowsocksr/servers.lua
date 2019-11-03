@@ -32,7 +32,7 @@ m = Map(shadowsocksr)
 
 
 
-m:section(SimpleSection).template  = "shadowsocksr/status"
+m:section(SimpleSection).template  = "shadowsocksr/status1"
 
 -- [[ Servers Manage ]]--
 
