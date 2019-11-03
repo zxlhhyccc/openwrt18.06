@@ -87,32 +87,30 @@ function o.cfgvalue(...)
 end
 
 
-
 o = s:option(DummyValue, "server", translate("Server Address"))
-
 function o.cfgvalue(...)
-
 	return Value.cfgvalue(...) or "?"
-
 end
-
-
-
-o = s:option(DummyValue, "encrypt_method", translate("Encrypt Method"))
-
-o.width="10%"
-
-
-
-
 
 o = s:option(DummyValue, "server_port", translate("Server Port"))
-
 function o.cfgvalue(...)
-
 	return Value.cfgvalue(...) or "?"
-
 end
+o = s:option(DummyValue, "encrypt_method", translate("Encrypt Method"))
+function o.cfgvalue(...)
+	return Value.cfgvalue(...) or "?"
+end
+
+o = s:option(DummyValue, "protocol", translate("Protocol"))
+function o.cfgvalue(...)
+	return Value.cfgvalue(...) or "?"
+end
+
+o = s:option(DummyValue, "obfs", translate("Obfs"))
+function o.cfgvalue(...)
+	return Value.cfgvalue(...) or "?"
+end
+
 
 
 
