@@ -59,5 +59,3 @@ o.default = 0
 o:depends("auto_update_subscribe", 1)
 
 return m
-
-
