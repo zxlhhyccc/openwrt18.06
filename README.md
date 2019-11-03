@@ -11,6 +11,6 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
    ./scripts/feeds install -a
    make menuconfig 
 
-5. 最后选好你要的路由，输入 make -j1 V=s （-j1 后面是线程数。第一次编译推荐用单线程，国内请尽量全局科学上网）即可开始编译你要的固件了。
+5. 最后选好你要的路由，输入 make -j1 V=s （-j1 后面是线程数，国内请尽量全局科学上网）即可开始编译你要的固件了。
 
 #内置主流插件 欢迎大家一起参与维护
